@@ -1,0 +1,253 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+
+.link-area{
+    display: flex;
+    justify-content: end;
+    align-items: top;
+    margin: .6rem;
+}
+
+.link{
+    align-self: top;
+    font-size: .8rem;
+    color: rgba(0,0,0,.87);
+    line-height: 2.4rem;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.svg-box{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.svg-box:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,.05);
+}
+
+.main{
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img{
+    width:272px;
+    height: 92px;
+}
+
+form{
+    margin-top: 2rem;
+}
+
+#search-bar{
+    display: flex;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    height: 44px;
+    max-width: 584px;
+    width: 582px;
+}
+
+#search-bar:hover{
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+
+#search-bar svg{
+    margin: 0 1rem;
+}
+
+input[type="text"]{
+    width: 400px;
+    height: 2rem;
+    font-size: large;
+    word-wrap: break-word;
+    outline: none;
+    border: none;
+}
+
+#btn-area{
+    width: 584px;
+    height: 58px;
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    font-size: 1rem;
+    border: 1px solid #f8f9fa;
+    background-color: #f8f9fa;
+    margin: 11px 5px;
+    padding: 0 16px;
+    height: 36px;
+    color: #3c4043;
+}
+
+.btn:hover{
+    border:1px solid #dadce0;
+    color: #202124;
+    cursor: pointer;
+}
+
+#image-search-btn{
+    display: flex;
+    background-color: #fff;
+    box-shadow: none;
+    border: none;
+    left:0
+}
+
+#image-search-btn:hover{
+    cursor: pointer;
+}
+
+#image-search-btn svg{
+    margin-right: auto;
+}
+
+#search-image-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    height: 44px;
+    max-width: 584px;
+    width: 582px;
+}
+
+#search-image-bar:hover{
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+
+#search-image-bar svg{
+    margin: 0 1rem;
+}
+
+#advanced-link-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    margin: .6rem;
+}
+
+#advanced-link-area img{
+    margin: .6rem;
+}
+
+#link-logo{
+    width: 74px;
+    height: 24px;
+}
+
+.appbar {
+    color: #d93025;
+    font-size: 20px;
+    margin: 35px;
+}
+
+hr{
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+}
+
+#advanced-container{
+    margin: 40px 45px;
+    max-width: 1240px;
+    min-width: 200px;
+    padding: 0 2rem;
+    font-size: 1.2rem;
+}
+
+.advanced-form-item{
+    display: flex;  
+    align-items: center;
+    font-size: .8rem;
+    margin: .5rem;
+    line-height: 20px;
+}
+
+.advanced-form-item label{
+    display: flex;  
+    flex: .8;
+    color: #222222;
+}
+
+.advanced-form-item input[type="text"]{
+    display: flex;  
+    flex: 3;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    height: 25px;
+    padding: 2px 8px;
+    font-size: .9rem;
+    margin-right: 1rem;
+}
+
+.advanced-form-item input[type="text"]:focus{
+    border: 1px solid #4d90fe;
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 30%);
+}
+
+.advanced-form-item span{
+    display: flex;  
+    flex: 2;
+    padding: .5rem;
+    color: #555555;
+}
+
+
+.advanced-form-item h3{
+    font-weight: 400;
+    color: #333333;
+}
+
+#advanced-search-btn-box{
+    display: flex;  
+    flex: 3;
+    justify-content: flex-end;
+}
+
+#advanced-search-btn{
+    line-height: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 12px;
+    background-color: #3079ed;
+    border: 1px solid #3079ed;
+    color: #fff;
+    box-shadow: none;
+    font-weight: bold;
+    font-size: 11px;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+}
+
+
+#advanced-search-btn:hover{
+    background-color: #357ae8;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#4d90fe),to(#357ae8));
+}
+
+

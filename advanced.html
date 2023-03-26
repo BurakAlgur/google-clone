@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="keywords" content="Google, Search, Harvard, Edx" />
+    <meta
+      name="description"
+      content="CS50’s Web Programming with Python and JavaScript: Project 0"
+    />
+    <meta name="author" content="Burak Algur" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="advanced-link-area">
+      <img src="./assets/logo.png" alt="logo" id="link-logo" />
+      <div style="display: flex">
+        <a href="./index.html" class="link">Search</a>
+        <div class="svg-box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="#5f6368"
+            class="bi bi-grid-3x3-gap-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"
+            />
+          </svg>
+        </div>
+
+        <div class="svg-box">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#ef6c00"
+            class="bi bi-c-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c.961 0 1.641.633 1.729 1.512h1.295v-.088c-.094-1.518-1.348-2.572-3.03-2.572-2.068 0-3.269 1.377-3.269 3.638v1.073c0 2.267 1.178 3.603 3.27 3.603 1.675 0 2.93-1.02 3.029-2.467v-.093H9.875c-.088.832-.75 1.418-1.729 1.418-1.224 0-1.927-.891-1.927-2.461v-1.06c0-1.583.715-2.503 1.927-2.503Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="appbar">
+      <label style="margin-left: 10px">Advanced Search</label>
+    </div>
+    <hr />
+
+    <div id="advanced-container">
+      <form action="https://www.google.com/search">
+        <div class="advanced-form-item">
+          <h3>Find pages with..</h3>
+          <div style="display: flex; flex: 3"></div>
+          <span style="font-weight: 700; color: #777777"
+            >To do this in the search box.</span
+          >
+        </div>
+
+        <div class="advanced-form-item">
+          <label for="input1">all these words:</label>
+          <input type="text" name="as_q" id="input1" />
+          <span>Type the important words: <i> tri-colour rat terrier</i> </span>
+        </div>
+
+        <div class="advanced-form-item">
+          <label for="input2">this exact word or phrase:</label>
+          <input type="text" name="as_epq" id="input2" />
+          <span>Put exact words in quotes: <i> "rat terrier"</i> </span>
+        </div>
+        <div class="advanced-form-item">
+          <label for="input3">any of these words:</label>
+          <input type="text" name="as_oq" id="input3" />
+          <span
+            >Type OR between all the words you want: miniature OR standard
+          </span>
+        </div>
+        <div class="advanced-form-item">
+          <label for="input4">none of these words:</label>
+          <input type="text" name="as_eq" id="input4" />
+          <span
+            >Put a minus sign just before words you don't want:
+            <br />
+            -rodent, -"Jack Russell"
+          </span>
+        </div>
+        <div class="advanced-form-item">
+          <label for=""></label>
+          <div id="advanced-search-btn-box">
+            <input
+              type="submit"
+              value="Advanced Search"
+              id="advanced-search-btn"
+            />
+          </div>
+          <span></span>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
